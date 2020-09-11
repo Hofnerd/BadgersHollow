@@ -1,0 +1,89 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 5F5AC84A
+P 4500 2950
+F 0 "R2" H 4570 2996 50  0000 L CNN
+F 1 "200" H 4570 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4430 2950 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F5ACEBE
+P 4650 2800
+F 0 "R1" V 4857 2800 50  0000 C CNN
+F 1 "100" V 4766 2800 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Axial_L21.0mm_D8.0mm_P28.00mm_Horizontal" V 4580 2800 50  0001 C CNN
+F 3 "~" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F5ACF00
+P 4800 2950
+F 0 "R3" H 4870 2996 50  0000 L CNN
+F 1 "300" H 4870 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4730 2950 50  0001 C CNN
+F 3 "~" H 4800 2950 50  0001 C CNN
+	1    4800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C100
+U 1 1 5F5ADC5F
+P 4950 2800
+F 0 "C100" V 4698 2800 50  0000 C CNN
+F 1 "10" V 4789 2800 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Axial_L21.0mm_D8.0mm_P28.00mm_Horizontal" H 4988 2650 50  0001 C CNN
+F 3 "~" H 4950 2800 50  0001 C CNN
+	1    4950 2800
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 2800
+$Comp
+L Device:R R4
+U 1 1 5F5AE074
+P 5100 2950
+F 0 "R4" H 5170 2996 50  0000 L CNN
+F 1 "400" H 5170 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 5030 2950 50  0001 C CNN
+F 3 "~" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3100 4800 3100
+Connection ~ 4800 3100
+Wire Wire Line
+	4800 3100 4500 3100
+$Comp
+L power:GND #PWR0101
+U 1 1 5F5AF0CB
+P 4500 3100
+F 0 "#PWR0101" H 4500 2850 50  0001 C CNN
+F 1 "GND" H 4505 2927 50  0000 C CNN
+F 2 "" H 4500 3100 50  0001 C CNN
+F 3 "" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 3100
+$EndSCHEMATC
