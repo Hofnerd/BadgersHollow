@@ -1493,105 +1493,8 @@ F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 $EndComp
 Wire Wire Line
 	14900 6900 15300 6900
-$Comp
-L LED:SK6812 D51
-U 1 1 5FFC7525
-P 14000 9200
-F 0 "D51" H 14344 9246 50  0000 L CNN
-F 1 "SK6812" H 14344 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14050 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 14100 8825 50  0001 L TNN
-	1    14000 9200
-	1    0    0    -1  
-$EndComp
-Connection ~ 14000 9500
-Wire Wire Line
-	13100 9500 13500 9500
-Wire Wire Line
-	12550 9200 12800 9200
-Connection ~ 12550 9200
-Connection ~ 13100 9500
-Wire Wire Line
-	12250 9500 12650 9500
-Connection ~ 12250 9500
-Wire Wire Line
-	11300 9500 11700 9500
-Connection ~ 11300 9500
-Wire Wire Line
-	10400 9500 10800 9500
-Connection ~ 10400 9500
-Wire Wire Line
-	9550 9500 9950 9500
-Connection ~ 9550 9500
-Connection ~ 14900 9500
 Wire Wire Line
 	8650 9500 9050 9500
-$Comp
-L LED:SK6812 D52
-U 1 1 5FFC752B
-P 14900 9200
-F 0 "D52" H 15244 9246 50  0000 L CNN
-F 1 "SK6812" H 15244 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14950 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 15000 8825 50  0001 L TNN
-	1    14900 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:SK6812 D50
-U 1 1 5FFC751F
-P 13100 9200
-F 0 "D50" H 13444 9246 50  0000 L CNN
-F 1 "SK6812" H 13444 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 13150 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 13200 8825 50  0001 L TNN
-	1    13100 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:SK6812 D49
-U 1 1 5FFC7519
-P 12250 9200
-F 0 "D49" H 12594 9246 50  0000 L CNN
-F 1 "SK6812" H 12594 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 12300 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 12350 8825 50  0001 L TNN
-	1    12250 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:SK6812 D48
-U 1 1 5FFC7513
-P 11300 9200
-F 0 "D48" H 11644 9246 50  0000 L CNN
-F 1 "SK6812" H 11644 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 11350 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 11400 8825 50  0001 L TNN
-	1    11300 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:SK6812 D47
-U 1 1 5FFC750D
-P 10400 9200
-F 0 "D47" H 10744 9246 50  0000 L CNN
-F 1 "SK6812" H 10744 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 10450 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 10500 8825 50  0001 L TNN
-	1    10400 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:SK6812 D46
-U 1 1 5FFC7507
-P 9550 9200
-F 0 "D46" H 9894 9246 50  0000 L CNN
-F 1 "SK6812" H 9894 9155 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 9600 8900 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 9650 8825 50  0001 L TNN
-	1    9550 9200
-	1    0    0    -1  
-$EndComp
 $Comp
 L LED:SK6812 D45
 U 1 1 5FFC7501
@@ -1603,110 +1506,19 @@ F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 	1    8650 9200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	15200 9200 15200 9650
 $Comp
 L power:GND #PWR0110
 U 1 1 5FF3FA62
-P 15200 9650
-F 0 "#PWR0110" H 15200 9400 50  0001 C CNN
-F 1 "GND" H 15205 9477 50  0000 C CNN
-F 2 "" H 15200 9650 50  0001 C CNN
-F 3 "" H 15200 9650 50  0001 C CNN
-	1    15200 9650
+P 9250 9200
+F 0 "#PWR0110" H 9250 8950 50  0001 C CNN
+F 1 "GND" H 9255 9027 50  0000 C CNN
+F 2 "" H 9250 9200 50  0001 C CNN
+F 3 "" H 9250 9200 50  0001 C CNN
+	1    9250 9200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14300 9200 14600 9200
-Wire Wire Line
-	13400 9200 13700 9200
-Wire Wire Line
-	12500 9200 12550 9200
-Wire Wire Line
-	11600 9200 11900 9200
-Wire Wire Line
-	10700 9200 11000 9200
-Wire Wire Line
-	9850 9200 10100 9200
 Wire Wire Line
 	8950 9200 9250 9200
-$Comp
-L Device:C C28
-U 1 1 6016F206
-P 15350 8900
-F 0 "C28" H 15465 8946 50  0000 L CNN
-F 1 "0.1uF" H 15465 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15388 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 15350 8900 50  0001 C CNN
-	1    15350 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C25
-U 1 1 601698B3
-P 14400 8900
-F 0 "C25" H 14515 8946 50  0000 L CNN
-F 1 "0.1uF" H 14515 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14438 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 14400 8900 50  0001 C CNN
-	1    14400 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C22
-U 1 1 601640B0
-P 13500 8900
-F 0 "C22" H 13615 8946 50  0000 L CNN
-F 1 "0.1uF" H 13615 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13538 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 13500 8900 50  0001 C CNN
-	1    13500 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C19
-U 1 1 6015E900
-P 12650 8900
-F 0 "C19" H 12765 8946 50  0000 L CNN
-F 1 "0.1uF" H 12765 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12688 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 12650 8900 50  0001 C CNN
-	1    12650 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 601591F2
-P 11700 8900
-F 0 "C16" H 11815 8946 50  0000 L CNN
-F 1 "0.1uF" H 11815 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11738 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 11700 8900 50  0001 C CNN
-	1    11700 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 60153A9B
-P 10800 8900
-F 0 "C13" H 10915 8946 50  0000 L CNN
-F 1 "0.1uF" H 10915 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10838 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 10800 8900 50  0001 C CNN
-	1    10800 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C10
-U 1 1 6014E380
-P 9950 8900
-F 0 "C10" H 10065 8946 50  0000 L CNN
-F 1 "0.1uF" H 10065 8855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9988 8750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9950 8900 50  0001 C CNN
-	1    9950 8900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C7
 U 1 1 60148B0B
@@ -2039,26 +1851,6 @@ Wire Wire Line
 	8650 8750 9050 8750
 Connection ~ 9050 8750
 Wire Wire Line
-	9050 8750 9950 8750
-Connection ~ 9950 8750
-Wire Wire Line
-	9950 8750 10800 8750
-Connection ~ 10800 8750
-Wire Wire Line
-	10800 8750 11700 8750
-Connection ~ 11700 8750
-Wire Wire Line
-	11700 8750 12650 8750
-Connection ~ 12650 8750
-Wire Wire Line
-	12650 8750 13500 8750
-Connection ~ 13500 8750
-Wire Wire Line
-	13500 8750 14400 8750
-Connection ~ 14400 8750
-Wire Wire Line
-	14400 8750 15350 8750
-Wire Wire Line
 	15300 7550 15650 7550
 Wire Wire Line
 	15650 7550 15650 6150
@@ -2067,10 +1859,7 @@ Wire Wire Line
 Connection ~ 15300 7550
 Connection ~ 15300 6150
 Wire Wire Line
-	15350 8750 15650 8750
-Wire Wire Line
 	15650 8750 15650 7550
-Connection ~ 15350 8750
 Connection ~ 15650 7550
 Wire Wire Line
 	9050 6450 9050 6900
@@ -2156,47 +1945,6 @@ Wire Wire Line
 	9050 9050 9050 9500
 Connection ~ 9050 9500
 Wire Wire Line
-	9050 9500 9550 9500
-Wire Wire Line
-	9950 9050 9950 9500
-Connection ~ 9950 9500
-Wire Wire Line
-	9950 9500 10400 9500
-Wire Wire Line
-	10800 9050 10800 9500
-Connection ~ 10800 9500
-Wire Wire Line
-	10800 9500 11300 9500
-Wire Wire Line
-	11700 9050 11700 9500
-Connection ~ 11700 9500
-Wire Wire Line
-	11700 9500 12250 9500
-Wire Wire Line
-	12650 9050 12650 9500
-Connection ~ 12650 9500
-Wire Wire Line
-	12650 9500 13100 9500
-Wire Wire Line
-	13500 9050 13500 9500
-Connection ~ 13500 9500
-Wire Wire Line
-	13500 9500 14000 9500
-Wire Wire Line
-	14400 9050 14400 9500
-Wire Wire Line
-	14000 9500 14400 9500
-Connection ~ 14400 9500
-Wire Wire Line
-	14400 9500 14900 9500
-Wire Wire Line
-	15350 9050 15350 9500
-Wire Wire Line
-	14900 9500 15350 9500
-Connection ~ 15350 9500
-Wire Wire Line
-	15350 9500 15600 9500
-Wire Wire Line
 	8350 9200 8350 8650
 Wire Wire Line
 	8350 8650 15700 8650
@@ -2251,7 +1999,7 @@ Text Notes 13700 950  0    50   ~ 0
 Switch Matrix\n
 Text GLabel 14500 4300 3    50   Input ~ 0
 rec
-Text GLabel 14100 4600 1    50   Input ~ 0
+Text GLabel 14100 4450 1    50   Input ~ 0
 rer
 $Comp
 L Device:D D28
@@ -2337,11 +2085,20 @@ F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 4450 50  
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	13550 4600 14650 4600
+	13550 4600 14100 4600
 Wire Wire Line
 	15050 3700 15050 4300
 Wire Wire Line
 	14500 2500 14500 3700
 Wire Wire Line
 	13550 3400 14650 3400
+Wire Wire Line
+	9050 8750 15650 8750
+Wire Wire Line
+	9050 9500 15600 9500
+Wire Wire Line
+	14100 4600 14100 4450
+Connection ~ 14100 4600
+Wire Wire Line
+	14100 4600 14650 4600
 $EndSCHEMATC
