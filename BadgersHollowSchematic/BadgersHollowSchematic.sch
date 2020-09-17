@@ -193,7 +193,7 @@ F 3 "" H 1200 6600 50  0001 C CNN
 	1    1200 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 3100 2    50   Input ~ 0
+Text GLabel 3500 3600 2    50   Input ~ 0
 boot
 Text GLabel 1600 6600 2    50   Input ~ 0
 boot
@@ -796,7 +796,7 @@ U 1 1 5FA0B2DE
 P 14300 2500
 F 0 "SW11" H 14300 2735 50  0000 C CNN
 F 1 "SW_SPST" H 14300 2644 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 2500 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_Vertical_PCB" H 14300 2500 50  0001 C CNN
 F 3 "~" H 14300 2500 50  0001 C CNN
 	1    14300 2500
 	1    0    0    -1  
@@ -901,28 +901,6 @@ F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 3250 50  
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_SPST SW16
-U 1 1 5FA0F031
-P 14300 3100
-F 0 "SW16" H 14300 3335 50  0000 C CNN
-F 1 "SW_SPST" H 14300 3244 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 3100 50  0001 C CNN
-F 3 "~" H 14300 3100 50  0001 C CNN
-	1    14300 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D17
-U 1 1 5FA0F037
-P 14100 3250
-F 0 "D17" V 14146 3170 50  0000 R CNN
-F 1 "1N4148" V 14055 3170 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 3250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 3250 50  0001 C CNN
-	1    14100 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Switch:SW_SPST SW17
 U 1 1 5FA0F03D
 P 14850 3100
@@ -1016,7 +994,7 @@ U 1 1 5FA1CE35
 P 14300 3700
 F 0 "SW21" H 14300 3935 50  0000 C CNN
 F 1 "SW_SPST" H 14300 3844 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 3700 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_Vertical_PCB" H 14300 3700 50  0001 C CNN
 F 3 "~" H 14300 3700 50  0001 C CNN
 	1    14300 3700
 	1    0    0    -1  
@@ -1120,28 +1098,6 @@ F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 4450 50  
 	1    13550 4450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Switch:SW_SPST SW26
-U 1 1 5FA474CA
-P 14300 4300
-F 0 "SW26" H 14300 4535 50  0000 C CNN
-F 1 "SW_SPST" H 14300 4444 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 4300 50  0001 C CNN
-F 3 "~" H 14300 4300 50  0001 C CNN
-	1    14300 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D27
-U 1 1 5FA474D0
-P 14100 4450
-F 0 "D27" V 14146 4370 50  0000 R CNN
-F 1 "1N4148" V 14055 4370 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 4450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 4450 50  0001 C CNN
-	1    14100 4450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	12850 1900 12850 2500
 Connection ~ 12850 2500
@@ -1179,14 +1135,6 @@ Wire Wire Line
 	14500 1900 14500 2500
 Connection ~ 14500 2500
 Wire Wire Line
-	14500 2500 14500 3100
-Connection ~ 14500 3100
-Wire Wire Line
-	14500 3100 14500 3700
-Connection ~ 14500 3700
-Wire Wire Line
-	14500 3700 14500 4300
-Wire Wire Line
 	15050 1900 15050 2500
 Connection ~ 15050 2500
 Wire Wire Line
@@ -1195,8 +1143,6 @@ Connection ~ 15050 3100
 Wire Wire Line
 	15050 3100 15050 3700
 Connection ~ 15050 3700
-Wire Wire Line
-	15050 3700 15050 4300
 Wire Wire Line
 	12450 2200 13000 2200
 Connection ~ 13000 2200
@@ -1226,11 +1172,6 @@ Wire Wire Line
 	13000 3400 13550 3400
 Connection ~ 13550 3400
 Wire Wire Line
-	13550 3400 14100 3400
-Connection ~ 14100 3400
-Wire Wire Line
-	14100 3400 14650 3400
-Wire Wire Line
 	12450 4000 13000 4000
 Connection ~ 13000 4000
 Wire Wire Line
@@ -1247,11 +1188,6 @@ Connection ~ 13000 4600
 Wire Wire Line
 	13000 4600 13550 4600
 Connection ~ 13550 4600
-Wire Wire Line
-	13550 4600 14100 4600
-Connection ~ 14100 4600
-Wire Wire Line
-	14100 4600 14650 4600
 Text GLabel 12850 1500 1    50   Input ~ 0
 col0
 Text GLabel 13400 1500 1    50   Input ~ 0
@@ -2313,9 +2249,9 @@ Text Notes 11550 5900 0    50   ~ 0
 Underglow RGB LED Chain\n
 Text Notes 13700 950  0    50   ~ 0
 Switch Matrix\n
-Text GLabel 15050 4300 3    50   Input ~ 0
+Text GLabel 14500 4300 3    50   Input ~ 0
 rec
-Text GLabel 14650 4600 2    50   Input ~ 0
+Text GLabel 14100 4600 1    50   Input ~ 0
 rer
 $Comp
 L Device:D D28
@@ -2354,18 +2290,17 @@ Text GLabel 3500 4000 2    50   Input ~ 0
 row3
 Text GLabel 3500 3900 2    50   Input ~ 0
 row4
-Text GLabel 3500 3000 2    50   Input ~ 0
-col0
-Text GLabel 3500 3200 2    50   Input ~ 0
-col1
 Text GLabel 3500 2700 2    50   Input ~ 0
-col2
+col0
 Text GLabel 3500 2800 2    50   Input ~ 0
-col3
+col1
 Text GLabel 3500 2900 2    50   Input ~ 0
+col2
+Text GLabel 3500 3000 2    50   Input ~ 0
+col3
+Text GLabel 3500 3100 2    50   Input ~ 0
 col4
 NoConn ~ 3500 3700
-NoConn ~ 3500 3600
 NoConn ~ 3500 4400
 NoConn ~ 3500 3400
 NoConn ~ 3500 3300
@@ -2373,4 +2308,40 @@ NoConn ~ 3500 2500
 NoConn ~ 3500 2400
 NoConn ~ 3500 2200
 NoConn ~ 3500 1500
+NoConn ~ 9350 2050
+NoConn ~ 3500 3200
+NoConn ~ 12150 3250
+Connection ~ 14500 3700
+Wire Wire Line
+	14500 3700 14500 4300
+$Comp
+L Switch:SW_SPST SW26
+U 1 1 5FA474CA
+P 14850 4300
+F 0 "SW26" H 14850 4535 50  0000 C CNN
+F 1 "SW_SPST" H 14850 4444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14850 4300 50  0001 C CNN
+F 3 "~" H 14850 4300 50  0001 C CNN
+	1    14850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 5FA474D0
+P 14650 4450
+F 0 "D27" V 14696 4370 50  0000 R CNN
+F 1 "1N4148" V 14605 4370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14650 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 4450 50  0001 C CNN
+	1    14650 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13550 4600 14650 4600
+Wire Wire Line
+	15050 3700 15050 4300
+Wire Wire Line
+	14500 2500 14500 3700
+Wire Wire Line
+	13550 3400 14650 3400
 $EndSCHEMATC
