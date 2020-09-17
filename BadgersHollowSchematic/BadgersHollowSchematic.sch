@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A1 33110 23386
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -17,8 +17,8 @@ $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5F60D4EA
 P 2900 2700
-F 0 "U1" H 2900 811 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 2900 720 50  0000 C CNN
+F 0 "U1" H 2850 1450 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2850 1300 50  0000 C CNN
 F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2900 2700 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2900 2700 50  0001 C CNN
 	1    2900 2700
@@ -77,10 +77,10 @@ F 3 "https://www.iqdfrequencyproducts.com/products/pn/LFXTAL027945Bulk.pdf" H 12
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5F67F6EF
 P 1400 2150
-F 0 "#PWR?" H 1400 1900 50  0001 C CNN
+F 0 "#PWR0101" H 1400 1900 50  0001 C CNN
 F 1 "GND" H 1405 1977 50  0000 C CNN
 F 2 "" H 1400 2150 50  0001 C CNN
 F 3 "" H 1400 2150 50  0001 C CNN
@@ -98,38 +98,2204 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F6A57AF
-P 800 3050
-F 0 "SW1" H 800 3335 50  0000 C CNN
-F 1 "SW_Push" H 800 3244 50  0000 C CNN
-F 2 "" H 800 3250 50  0001 C CNN
-F 3 "~" H 800 3250 50  0001 C CNN
-	1    800  3050
+P 1650 5900
+F 0 "SW1" H 1650 6185 50  0000 C CNN
+F 1 "SW_Push" H 1650 6094 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1650 6100 50  0001 C CNN
+F 3 "~" H 1650 6100 50  0001 C CNN
+	1    1650 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F6A608F
-P 1000 2900
-F 0 "R1" H 1070 2946 50  0000 L CNN
-F 1 "10K" H 1070 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 930 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/rcse3-1761771.pdf" H 1000 2900 50  0001 C CNN
-	1    1000 2900
+P 1850 5750
+F 0 "R1" H 1920 5796 50  0000 L CNN
+F 1 "10K" H 1920 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1780 5750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/rcse3-1761771.pdf" H 1850 5750 50  0001 C CNN
+	1    1850 5750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1000 3050 2    50   Input ~ 0
+Text GLabel 1950 5900 2    50   Input ~ 0
 Reset
 $Comp
-L power:GND #PWR?
-U 1 1 5F6A6AAC
-P 600 3050
-F 0 "#PWR?" H 600 2800 50  0001 C CNN
-F 1 "GND" H 605 2877 50  0000 C CNN
-F 2 "" H 600 3050 50  0001 C CNN
-F 3 "" H 600 3050 50  0001 C CNN
-	1    600  3050
+L power:GND #PWR0102
+U 1 1 5F644868
+P 2900 4500
+F 0 "#PWR0102" H 2900 4250 50  0001 C CNN
+F 1 "GND" H 2905 4327 50  0000 C CNN
+F 2 "" H 2900 4500 50  0001 C CNN
+F 3 "" H 2900 4500 50  0001 C CNN
+	1    2900 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1000 2750 1    50   Input ~ 0
-Vcc
+Wire Wire Line
+	1850 5900 1950 5900
+Connection ~ 1850 5900
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F6DAEE9
+P 1850 5600
+F 0 "#PWR0103" H 1850 5450 50  0001 C CNN
+F 1 "+5V" H 1865 5773 50  0000 C CNN
+F 2 "" H 1850 5600 50  0001 C CNN
+F 3 "" H 1850 5600 50  0001 C CNN
+	1    1850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5F6DB97D
+P 2900 700
+F 0 "#PWR0104" H 2900 550 50  0001 C CNN
+F 1 "+5V" H 2915 873 50  0000 C CNN
+F 2 "" H 2900 700 50  0001 C CNN
+F 3 "" H 2900 700 50  0001 C CNN
+	1    2900 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 900  2900 900 
+Wire Wire Line
+	2900 700  2900 900 
+Connection ~ 2900 900 
+$Comp
+L power:GND #PWR0105
+U 1 1 5F6A6AAC
+P 1450 5900
+F 0 "#PWR0105" H 1450 5650 50  0001 C CNN
+F 1 "GND" H 1455 5727 50  0000 C CNN
+F 2 "" H 1450 5900 50  0001 C CNN
+F 3 "" H 1450 5900 50  0001 C CNN
+	1    1450 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F706BC8
+P 1800 6300
+F 0 "SW2" H 1800 6585 50  0000 C CNN
+F 1 "SW_Push" H 1800 6494 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1800 6500 50  0001 C CNN
+F 3 "~" H 1800 6500 50  0001 C CNN
+	1    1800 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F706BCE
+P 1600 6300
+F 0 "#PWR0106" H 1600 6050 50  0001 C CNN
+F 1 "GND" H 1605 6127 50  0000 C CNN
+F 2 "" H 1600 6300 50  0001 C CNN
+F 3 "" H 1600 6300 50  0001 C CNN
+	1    1600 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 2800 2    50   Input ~ 0
+boot
+Text GLabel 2000 6300 2    50   Input ~ 0
+boot
+Text GLabel 2300 2300 0    50   Input ~ 0
+d-
+Text GLabel 2300 2200 0    50   Input ~ 0
+d+
+Wire Wire Line
+	2800 4500 2900 4500
+Connection ~ 2900 4500
+Wire Wire Line
+	2800 900  2900 900 
+$Comp
+L Device:C C3
+U 1 1 5F8A4578
+P 2000 2650
+F 0 "C3" H 2115 2696 50  0000 L CNN
+F 1 "1uF" H 2115 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2038 2500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/taiyo_yuden_07182019_MLCC_AECQ200_Grade_1_X7R_data-1622917.pdf" H 2000 2650 50  0001 C CNN
+	1    2000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5F8A4E92
+P 2000 2800
+F 0 "#PWR0114" H 2000 2550 50  0001 C CNN
+F 1 "GND" H 2005 2627 50  0000 C CNN
+F 2 "" H 2000 2800 50  0001 C CNN
+F 3 "" H 2000 2800 50  0001 C CNN
+	1    2000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2500 2300 2500
+NoConn ~ 2300 1800
+$Comp
+L power:+5V #PWR0116
+U 1 1 5F8C8149
+P 2300 2000
+F 0 "#PWR0116" H 2300 1850 50  0001 C CNN
+F 1 "+5V" V 2315 2128 50  0000 L CNN
+F 2 "" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5F8E02C6
+P 2750 5650
+F 0 "D3" H 2743 5867 50  0000 C CNN
+F 1 "PWR LED" H 2743 5776 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2750 5650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/445/156120BS75000-1715878.pdf" H 2750 5650 50  0001 C CNN
+	1    2750 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F8E4A9C
+P 2600 5800
+F 0 "R7" H 2670 5846 50  0000 L CNN
+F 1 "1.5K" H 2670 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 5800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/dcrcwe3-1762152.pdf" H 2600 5800 50  0001 C CNN
+	1    2600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 5F8EAA4B
+P 2900 5650
+F 0 "#PWR0117" H 2900 5500 50  0001 C CNN
+F 1 "+5V" H 2915 5823 50  0000 C CNN
+F 2 "" H 2900 5650 50  0001 C CNN
+F 3 "" H 2900 5650 50  0001 C CNN
+	1    2900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5F8EB28E
+P 2600 5950
+F 0 "#PWR0118" H 2600 5700 50  0001 C CNN
+F 1 "GND" H 2605 5777 50  0000 C CNN
+F 2 "" H 2600 5950 50  0001 C CNN
+F 3 "" H 2600 5950 50  0001 C CNN
+	1    2600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J2
+U 1 1 5F8FA375
+P 2850 7200
+F 0 "J2" H 2521 7296 50  0000 R CNN
+F 1 "AVR-ISP-6" H 2521 7205 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical" V 2600 7250 50  0001 C CNN
+F 3 " ~" H 1575 6650 50  0001 C CNN
+	1    2850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5F8FC297
+P 2750 6700
+F 0 "#PWR0119" H 2750 6550 50  0001 C CNN
+F 1 "+5V" H 2765 6873 50  0000 C CNN
+F 2 "" H 2750 6700 50  0001 C CNN
+F 3 "" H 2750 6700 50  0001 C CNN
+	1    2750 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5F8FCD89
+P 2700 7600
+F 0 "#PWR0120" H 2700 7350 50  0001 C CNN
+F 1 "GND" H 2705 7427 50  0000 C CNN
+F 2 "" H 2700 7600 50  0001 C CNN
+F 3 "" H 2700 7600 50  0001 C CNN
+	1    2700 7600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 7000 2    50   Input ~ 0
+MISO
+Text GLabel 3250 7100 2    50   Input ~ 0
+MOSI
+Text GLabel 3250 7200 2    50   Input ~ 0
+SCK
+Text GLabel 3250 7300 2    50   Input ~ 0
+Reset
+Connection ~ 5850 3300
+Wire Wire Line
+	5850 3300 7250 3300
+Connection ~ 5850 3050
+Wire Wire Line
+	6700 3050 6700 3000
+Wire Wire Line
+	5850 3050 6700 3050
+NoConn ~ 5850 3450
+NoConn ~ 5850 2700
+Wire Wire Line
+	5850 3200 5850 3300
+Wire Wire Line
+	5850 2950 5850 3050
+Wire Wire Line
+	6500 2200 6500 2300
+Wire Wire Line
+	6800 2500 6800 2200
+Wire Wire Line
+	6500 2500 6800 2500
+Connection ~ 6500 2500
+Wire Wire Line
+	5850 2500 5850 2450
+Connection ~ 5850 2500
+Connection ~ 5850 3800
+Wire Wire Line
+	6500 2500 5850 2500
+Wire Wire Line
+	6500 3800 6500 2500
+Wire Wire Line
+	5850 3800 6500 3800
+Wire Wire Line
+	5850 2550 5850 2500
+Wire Wire Line
+	5850 3800 5850 3700
+Wire Wire Line
+	6300 3550 6300 2800
+Connection ~ 6300 3550
+Wire Wire Line
+	6150 3550 6300 3550
+Wire Wire Line
+	6300 2800 6300 2200
+Connection ~ 6300 2800
+Wire Wire Line
+	6150 2800 6300 2800
+Connection ~ 6300 4150
+$Comp
+L power:GND #PWR0107
+U 1 1 5F917F78
+P 6300 4150
+F 0 "#PWR0107" H 6300 3900 50  0001 C CNN
+F 1 "GND" H 6305 3977 50  0000 C CNN
+F 2 "" H 6300 4150 50  0001 C CNN
+F 3 "" H 6300 4150 50  0001 C CNN
+	1    6300 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2200
+Connection ~ 5850 4150
+Wire Wire Line
+	5850 4150 6300 4150
+Wire Wire Line
+	6300 2200 5850 2200
+Wire Wire Line
+	6300 4150 6300 3550
+Wire Wire Line
+	5850 2200 5850 2300
+Wire Wire Line
+	5850 4050 5850 4150
+Connection ~ 5850 4050
+Wire Wire Line
+	5850 3950 5850 4050
+$Comp
+L power:VCC #PWR0115
+U 1 1 5F8B951E
+P 6800 2200
+F 0 "#PWR0115" H 6800 2050 50  0001 C CNN
+F 1 "VCC" H 6815 2373 50  0000 C CNN
+F 2 "" H 6800 2200 50  0001 C CNN
+F 3 "" H 6800 2200 50  0001 C CNN
+	1    6800 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 3650
+$Comp
+L power:GND #PWR0113
+U 1 1 5F8876F8
+P 7250 3650
+F 0 "#PWR0113" H 7250 3400 50  0001 C CNN
+F 1 "GND" H 7255 3477 50  0000 C CNN
+F 2 "" H 7250 3650 50  0001 C CNN
+F 3 "" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3650 7250 3650
+Wire Wire Line
+	7250 3300 7600 3300
+Connection ~ 7250 3300
+Wire Wire Line
+	7250 3300 7250 3350
+Wire Wire Line
+	7100 3000 7450 3000
+Connection ~ 7100 3000
+Wire Wire Line
+	7100 3000 7100 3350
+$Comp
+L Device:D_Zener D1
+U 1 1 5F8834BA
+P 7100 3500
+F 0 "D1" V 7050 3350 50  0000 L CNN
+F 1 "3.6V" V 7150 3300 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp" H 7100 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/1n4728a-1767472.pdf" H 7100 3500 50  0001 C CNN
+	1    7100 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D2
+U 1 1 5F8811DF
+P 7250 3500
+F 0 "D2" V 7204 3580 50  0000 L CNN
+F 1 "3.6V" V 7295 3580 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp" H 7250 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/1n4728a-1767472.pdf" H 7250 3500 50  0001 C CNN
+	1    7250 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5F872FE2
+P 7450 2550
+F 0 "#PWR0112" H 7450 2400 50  0001 C CNN
+F 1 "+5V" H 7465 2723 50  0000 C CNN
+F 2 "" H 7450 2550 50  0001 C CNN
+F 3 "" H 7450 2550 50  0001 C CNN
+	1    7450 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3000 7600 3000
+Connection ~ 7450 3000
+Wire Wire Line
+	7450 3000 7450 2850
+Wire Wire Line
+	6700 3000 7100 3000
+$Comp
+L Device:R R6
+U 1 1 5F86B6A0
+P 7450 2700
+F 0 "R6" V 7450 2650 50  0000 L CNN
+F 1 "1.5K" H 7500 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7380 2700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/dcrcwe3-1762152.pdf" H 7450 2700 50  0001 C CNN
+	1    7450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3000 8150 3000
+Text GLabel 8150 3000 2    50   Input ~ 0
+d-
+Wire Wire Line
+	7900 3300 8150 3300
+Text GLabel 8150 3300 2    50   Input ~ 0
+d+
+$Comp
+L Device:R R3
+U 1 1 5F8283E0
+P 6000 3550
+F 0 "R3" V 6000 3550 50  0000 C CNN
+F 1 "5.1K" V 6050 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5930 3550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/chp-a-1858677.pdf" H 6000 3550 50  0001 C CNN
+	1    6000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F84466E
+P 7750 3300
+F 0 "R5" V 7750 3300 50  0000 C CNN
+F 1 "22" V 7700 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7680 3300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/rcae3-1761931.pdf" H 7750 3300 50  0001 C CNN
+	1    7750 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F842355
+P 7750 3000
+F 0 "R4" V 7750 3000 50  0000 C CNN
+F 1 "22" V 7800 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7680 3000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/rcae3-1761931.pdf" H 7750 3000 50  0001 C CNN
+	1    7750 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5F840F95
+P 6500 2200
+F 0 "#PWR0111" H 6500 2050 50  0001 C CNN
+F 1 "+5V" H 6515 2373 50  0000 C CNN
+F 2 "" H 6500 2200 50  0001 C CNN
+F 3 "" H 6500 2200 50  0001 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F827BC2
+P 6000 2800
+F 0 "R2" V 6000 2800 50  0000 C CNN
+F 1 "5.1K" V 5950 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5930 2800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/chp-a-1858677.pdf" H 6000 2800 50  0001 C CNN
+	1    6000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5F78E711
+P 6500 2400
+F 0 "F1" H 6568 2446 50  0000 L CNN
+F 1 "Polyfuse_Small" H 6568 2355 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6550 2200 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/643/ds-CP-0zcj-series-1664160.pdf" H 6500 2400 50  0001 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BadgersHollow:usbc_gct J1
+U 1 1 5F912BB2
+P 5550 2050
+F 0 "J1" H 5533 2165 50  0000 C CNN
+F 1 "usbc_gct" H 5533 2074 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 5550 2050 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/Ionex_USB_Conn_Br.pdf" H 5550 2050 50  0001 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5F990F44
+P 3350 5850
+F 0 "#PWR0108" H 3350 5700 50  0001 C CNN
+F 1 "+5V" H 3365 6023 50  0000 C CNN
+F 2 "" H 3350 5850 50  0001 C CNN
+F 3 "" H 3350 5850 50  0001 C CNN
+	1    3350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F99170C
+P 3350 6000
+F 0 "C4" H 3465 6046 50  0000 L CNN
+F 1 "10uF" H 3465 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 5850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 3350 6000 50  0001 C CNN
+	1    3350 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F99F131
+P 3350 6150
+F 0 "#PWR0109" H 3350 5900 50  0001 C CNN
+F 1 "GND" H 3355 5977 50  0000 C CNN
+F 2 "" H 3350 6150 50  0001 C CNN
+F 3 "" H 3350 6150 50  0001 C CNN
+	1    3350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5F9A1A9C
+P 12650 1900
+F 0 "SW3" H 12650 2135 50  0000 C CNN
+F 1 "SW_SPST" H 12650 2044 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12650 1900 50  0001 C CNN
+F 3 "~" H 12650 1900 50  0001 C CNN
+	1    12650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5F9A3D4F
+P 12450 2050
+F 0 "D4" V 12496 1970 50  0000 R CNN
+F 1 "1N4148" V 12405 1970 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 12450 2050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 12450 2050 50  0001 C CNN
+	1    12450 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5F9BD939
+P 13200 1900
+F 0 "SW4" H 13200 2135 50  0000 C CNN
+F 1 "SW_SPST" H 13200 2044 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13200 1900 50  0001 C CNN
+F 3 "~" H 13200 1900 50  0001 C CNN
+	1    13200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5F9BD93F
+P 13000 2050
+F 0 "D5" V 13046 1970 50  0000 R CNN
+F 1 "1N4148" V 12955 1970 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13000 2050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13000 2050 50  0001 C CNN
+	1    13000 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW5
+U 1 1 5F9BE932
+P 13750 1900
+F 0 "SW5" H 13750 2135 50  0000 C CNN
+F 1 "SW_SPST" H 13750 2044 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13750 1900 50  0001 C CNN
+F 3 "~" H 13750 1900 50  0001 C CNN
+	1    13750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5F9BE938
+P 13550 2050
+F 0 "D6" V 13596 1970 50  0000 R CNN
+F 1 "1N4148" V 13505 1970 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13550 2050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 2050 50  0001 C CNN
+	1    13550 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5F9BF64B
+P 14300 1900
+F 0 "SW6" H 14300 2135 50  0000 C CNN
+F 1 "SW_SPST" H 14300 2044 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 1900 50  0001 C CNN
+F 3 "~" H 14300 1900 50  0001 C CNN
+	1    14300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5F9BF651
+P 14100 2050
+F 0 "D7" V 14146 1970 50  0000 R CNN
+F 1 "1N4148" V 14055 1970 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 2050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 2050 50  0001 C CNN
+	1    14100 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW7
+U 1 1 5F9C023C
+P 14850 1900
+F 0 "SW7" H 14850 2135 50  0000 C CNN
+F 1 "SW_SPST" H 14850 2044 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14850 1900 50  0001 C CNN
+F 3 "~" H 14850 1900 50  0001 C CNN
+	1    14850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5F9C0242
+P 14650 2050
+F 0 "D8" V 14696 1970 50  0000 R CNN
+F 1 "1N4148" V 14605 1970 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14650 2050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 2050 50  0001 C CNN
+	1    14650 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW29
+U 1 1 5F9EF2E4
+P 5500 1050
+F 0 "SW29" H 5500 1417 50  0000 C CNN
+F 1 "Rotory Encoder" H 5500 1326 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 5350 1210 50  0001 C CNN
+F 3 "~" H 5500 1310 50  0001 C CNN
+	1    5500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW8
+U 1 1 5FA0B2BA
+P 12650 2500
+F 0 "SW8" H 12650 2735 50  0000 C CNN
+F 1 "SW_SPST" H 12650 2644 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12650 2500 50  0001 C CNN
+F 3 "~" H 12650 2500 50  0001 C CNN
+	1    12650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5FA0B2C0
+P 12450 2650
+F 0 "D9" V 12496 2570 50  0000 R CNN
+F 1 "1N4148" V 12405 2570 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 12450 2650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 12450 2650 50  0001 C CNN
+	1    12450 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW9
+U 1 1 5FA0B2C6
+P 13200 2500
+F 0 "SW9" H 13200 2735 50  0000 C CNN
+F 1 "SW_SPST" H 13200 2644 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13200 2500 50  0001 C CNN
+F 3 "~" H 13200 2500 50  0001 C CNN
+	1    13200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 5FA0B2CC
+P 13000 2650
+F 0 "D10" V 13046 2570 50  0000 R CNN
+F 1 "1N4148" V 12955 2570 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13000 2650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13000 2650 50  0001 C CNN
+	1    13000 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW10
+U 1 1 5FA0B2D2
+P 13750 2500
+F 0 "SW10" H 13750 2735 50  0000 C CNN
+F 1 "SW_SPST" H 13750 2644 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13750 2500 50  0001 C CNN
+F 3 "~" H 13750 2500 50  0001 C CNN
+	1    13750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 5FA0B2D8
+P 13550 2650
+F 0 "D11" V 13596 2570 50  0000 R CNN
+F 1 "1N4148" V 13505 2570 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13550 2650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 2650 50  0001 C CNN
+	1    13550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW11
+U 1 1 5FA0B2DE
+P 14300 2500
+F 0 "SW11" H 14300 2735 50  0000 C CNN
+F 1 "SW_SPST" H 14300 2644 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 2500 50  0001 C CNN
+F 3 "~" H 14300 2500 50  0001 C CNN
+	1    14300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 5FA0B2E4
+P 14100 2650
+F 0 "D12" V 14146 2570 50  0000 R CNN
+F 1 "1N4148" V 14055 2570 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 2650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 2650 50  0001 C CNN
+	1    14100 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW12
+U 1 1 5FA0B2EA
+P 14850 2500
+F 0 "SW12" H 14850 2735 50  0000 C CNN
+F 1 "SW_SPST" H 14850 2644 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14850 2500 50  0001 C CNN
+F 3 "~" H 14850 2500 50  0001 C CNN
+	1    14850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 5FA0B2F0
+P 14650 2650
+F 0 "D13" V 14696 2570 50  0000 R CNN
+F 1 "1N4148" V 14605 2570 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14650 2650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 2650 50  0001 C CNN
+	1    14650 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW13
+U 1 1 5FA0F00D
+P 12650 3100
+F 0 "SW13" H 12650 3335 50  0000 C CNN
+F 1 "SW_SPST" H 12650 3244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12650 3100 50  0001 C CNN
+F 3 "~" H 12650 3100 50  0001 C CNN
+	1    12650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5FA0F013
+P 12450 3250
+F 0 "D14" V 12496 3170 50  0000 R CNN
+F 1 "1N4148" V 12405 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 12450 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 12450 3250 50  0001 C CNN
+	1    12450 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW14
+U 1 1 5FA0F019
+P 13200 3100
+F 0 "SW14" H 13200 3335 50  0000 C CNN
+F 1 "SW_SPST" H 13200 3244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13200 3100 50  0001 C CNN
+F 3 "~" H 13200 3100 50  0001 C CNN
+	1    13200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 5FA0F01F
+P 13000 3250
+F 0 "D15" V 13046 3170 50  0000 R CNN
+F 1 "1N4148" V 12955 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13000 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13000 3250 50  0001 C CNN
+	1    13000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW15
+U 1 1 5FA0F025
+P 13750 3100
+F 0 "SW15" H 13750 3335 50  0000 C CNN
+F 1 "SW_SPST" H 13750 3244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13750 3100 50  0001 C CNN
+F 3 "~" H 13750 3100 50  0001 C CNN
+	1    13750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D16
+U 1 1 5FA0F02B
+P 13550 3250
+F 0 "D16" V 13596 3170 50  0000 R CNN
+F 1 "1N4148" V 13505 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13550 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 3250 50  0001 C CNN
+	1    13550 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW16
+U 1 1 5FA0F031
+P 14300 3100
+F 0 "SW16" H 14300 3335 50  0000 C CNN
+F 1 "SW_SPST" H 14300 3244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 3100 50  0001 C CNN
+F 3 "~" H 14300 3100 50  0001 C CNN
+	1    14300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D17
+U 1 1 5FA0F037
+P 14100 3250
+F 0 "D17" V 14146 3170 50  0000 R CNN
+F 1 "1N4148" V 14055 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 3250 50  0001 C CNN
+	1    14100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW17
+U 1 1 5FA0F03D
+P 14850 3100
+F 0 "SW17" H 14850 3335 50  0000 C CNN
+F 1 "SW_SPST" H 14850 3244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14850 3100 50  0001 C CNN
+F 3 "~" H 14850 3100 50  0001 C CNN
+	1    14850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D18
+U 1 1 5FA0F043
+P 14650 3250
+F 0 "D18" V 14696 3170 50  0000 R CNN
+F 1 "1N4148" V 14605 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14650 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 3250 50  0001 C CNN
+	1    14650 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW18
+U 1 1 5FA1CE11
+P 12650 3700
+F 0 "SW18" H 12650 3935 50  0000 C CNN
+F 1 "SW_SPST" H 12650 3844 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12650 3700 50  0001 C CNN
+F 3 "~" H 12650 3700 50  0001 C CNN
+	1    12650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D19
+U 1 1 5FA1CE17
+P 12450 3850
+F 0 "D19" V 12496 3770 50  0000 R CNN
+F 1 "1N4148" V 12405 3770 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 12450 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 12450 3850 50  0001 C CNN
+	1    12450 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW19
+U 1 1 5FA1CE1D
+P 13200 3700
+F 0 "SW19" H 13200 3935 50  0000 C CNN
+F 1 "SW_SPST" H 13200 3844 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13200 3700 50  0001 C CNN
+F 3 "~" H 13200 3700 50  0001 C CNN
+	1    13200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 5FA1CE23
+P 13000 3850
+F 0 "D20" V 13046 3770 50  0000 R CNN
+F 1 "1N4148" V 12955 3770 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13000 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13000 3850 50  0001 C CNN
+	1    13000 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW20
+U 1 1 5FA1CE29
+P 13750 3700
+F 0 "SW20" H 13750 3935 50  0000 C CNN
+F 1 "SW_SPST" H 13750 3844 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13750 3700 50  0001 C CNN
+F 3 "~" H 13750 3700 50  0001 C CNN
+	1    13750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D21
+U 1 1 5FA1CE2F
+P 13550 3850
+F 0 "D21" V 13596 3770 50  0000 R CNN
+F 1 "1N4148" V 13505 3770 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13550 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 3850 50  0001 C CNN
+	1    13550 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW21
+U 1 1 5FA1CE35
+P 14300 3700
+F 0 "SW21" H 14300 3935 50  0000 C CNN
+F 1 "SW_SPST" H 14300 3844 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 3700 50  0001 C CNN
+F 3 "~" H 14300 3700 50  0001 C CNN
+	1    14300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D22
+U 1 1 5FA1CE3B
+P 14100 3850
+F 0 "D22" V 14146 3770 50  0000 R CNN
+F 1 "1N4148" V 14055 3770 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 3850 50  0001 C CNN
+	1    14100 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW22
+U 1 1 5FA1CE41
+P 14850 3700
+F 0 "SW22" H 14850 3935 50  0000 C CNN
+F 1 "SW_SPST" H 14850 3844 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14850 3700 50  0001 C CNN
+F 3 "~" H 14850 3700 50  0001 C CNN
+	1    14850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D23
+U 1 1 5FA1CE47
+P 14650 3850
+F 0 "D23" V 14696 3770 50  0000 R CNN
+F 1 "1N4148" V 14605 3770 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14650 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 3850 50  0001 C CNN
+	1    14650 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW23
+U 1 1 5FA474A6
+P 12650 4300
+F 0 "SW23" H 12650 4535 50  0000 C CNN
+F 1 "SW_SPST" H 12650 4444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 12650 4300 50  0001 C CNN
+F 3 "~" H 12650 4300 50  0001 C CNN
+	1    12650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D24
+U 1 1 5FA474AC
+P 12450 4450
+F 0 "D24" V 12496 4370 50  0000 R CNN
+F 1 "1N4148" V 12405 4370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 12450 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 12450 4450 50  0001 C CNN
+	1    12450 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW24
+U 1 1 5FA474B2
+P 13200 4300
+F 0 "SW24" H 13200 4535 50  0000 C CNN
+F 1 "SW_SPST" H 13200 4444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13200 4300 50  0001 C CNN
+F 3 "~" H 13200 4300 50  0001 C CNN
+	1    13200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D25
+U 1 1 5FA474B8
+P 13000 4450
+F 0 "D25" V 13046 4370 50  0000 R CNN
+F 1 "1N4148" V 12955 4370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13000 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13000 4450 50  0001 C CNN
+	1    13000 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW25
+U 1 1 5FA474BE
+P 13750 4300
+F 0 "SW25" H 13750 4535 50  0000 C CNN
+F 1 "SW_SPST" H 13750 4444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 13750 4300 50  0001 C CNN
+F 3 "~" H 13750 4300 50  0001 C CNN
+	1    13750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D26
+U 1 1 5FA474C4
+P 13550 4450
+F 0 "D26" V 13596 4370 50  0000 R CNN
+F 1 "1N4148" V 13505 4370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 13550 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 13550 4450 50  0001 C CNN
+	1    13550 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW26
+U 1 1 5FA474CA
+P 14300 4300
+F 0 "SW26" H 14300 4535 50  0000 C CNN
+F 1 "SW_SPST" H 14300 4444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14300 4300 50  0001 C CNN
+F 3 "~" H 14300 4300 50  0001 C CNN
+	1    14300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 5FA474D0
+P 14100 4450
+F 0 "D27" V 14146 4370 50  0000 R CNN
+F 1 "1N4148" V 14055 4370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14100 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14100 4450 50  0001 C CNN
+	1    14100 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW27
+U 1 1 5FA474D6
+P 14850 4300
+F 0 "SW27" H 14850 4535 50  0000 C CNN
+F 1 "SW_SPST" H 14850 4444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 14850 4300 50  0001 C CNN
+F 3 "~" H 14850 4300 50  0001 C CNN
+	1    14850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D28
+U 1 1 5FA474DC
+P 14650 4450
+F 0 "D28" V 14696 4370 50  0000 R CNN
+F 1 "1N4148" V 14605 4370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 14650 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30097-88009.pdf" H 14650 4450 50  0001 C CNN
+	1    14650 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12850 1900 12850 2500
+Connection ~ 12850 2500
+Wire Wire Line
+	12850 2500 12850 3100
+Connection ~ 12850 3100
+Wire Wire Line
+	12850 3100 12850 3700
+Connection ~ 12850 3700
+Wire Wire Line
+	12850 3700 12850 4300
+Wire Wire Line
+	13400 1900 13400 2500
+Connection ~ 13400 2500
+Wire Wire Line
+	13400 2500 13400 3100
+Connection ~ 13400 3100
+Wire Wire Line
+	13400 3100 13400 3700
+Connection ~ 13400 3700
+Wire Wire Line
+	13400 3700 13400 4300
+Wire Wire Line
+	13950 1900 13950 2500
+Connection ~ 13950 2500
+Wire Wire Line
+	13950 2500 13950 3100
+Connection ~ 13950 3100
+Wire Wire Line
+	13950 3100 13950 3700
+Connection ~ 13950 3700
+Wire Wire Line
+	13950 3700 13950 4300
+Wire Wire Line
+	14500 1900 14500 2500
+Connection ~ 14500 2500
+Wire Wire Line
+	14500 2500 14500 3100
+Connection ~ 14500 3100
+Wire Wire Line
+	14500 3100 14500 3700
+Connection ~ 14500 3700
+Wire Wire Line
+	14500 3700 14500 4300
+Wire Wire Line
+	15050 1900 15050 2500
+Connection ~ 15050 2500
+Wire Wire Line
+	15050 2500 15050 3100
+Connection ~ 15050 3100
+Wire Wire Line
+	15050 3100 15050 3700
+Connection ~ 15050 3700
+Wire Wire Line
+	15050 3700 15050 4300
+Wire Wire Line
+	12450 2200 13000 2200
+Connection ~ 13000 2200
+Wire Wire Line
+	13000 2200 13550 2200
+Connection ~ 13550 2200
+Wire Wire Line
+	13550 2200 14100 2200
+Connection ~ 14100 2200
+Wire Wire Line
+	14100 2200 14650 2200
+Wire Wire Line
+	12450 2800 13000 2800
+Connection ~ 13000 2800
+Wire Wire Line
+	13000 2800 13550 2800
+Connection ~ 13550 2800
+Wire Wire Line
+	13550 2800 14100 2800
+Connection ~ 14100 2800
+Wire Wire Line
+	14100 2800 14650 2800
+Wire Wire Line
+	12450 3400 13000 3400
+Connection ~ 13000 3400
+Wire Wire Line
+	13000 3400 13550 3400
+Connection ~ 13550 3400
+Wire Wire Line
+	13550 3400 14100 3400
+Connection ~ 14100 3400
+Wire Wire Line
+	14100 3400 14650 3400
+Wire Wire Line
+	12450 4000 13000 4000
+Connection ~ 13000 4000
+Wire Wire Line
+	13000 4000 13550 4000
+Connection ~ 13550 4000
+Wire Wire Line
+	13550 4000 14100 4000
+Connection ~ 14100 4000
+Wire Wire Line
+	14100 4000 14650 4000
+Wire Wire Line
+	12450 4600 13000 4600
+Connection ~ 13000 4600
+Wire Wire Line
+	13000 4600 13550 4600
+Connection ~ 13550 4600
+Wire Wire Line
+	13550 4600 14100 4600
+Connection ~ 14100 4600
+Wire Wire Line
+	14100 4600 14650 4600
+Text GLabel 12850 1500 1    50   Input ~ 0
+col0
+Text GLabel 13400 1500 1    50   Input ~ 0
+col1
+Text GLabel 13950 1500 1    50   Input ~ 0
+col2
+Text GLabel 14500 1500 1    50   Input ~ 0
+col3
+Text GLabel 15050 1500 1    50   Input ~ 0
+col4
+Text GLabel 11950 2800 0    50   Input ~ 0
+row1
+Text GLabel 11950 2200 0    50   Input ~ 0
+row0
+Text GLabel 11950 3400 0    50   Input ~ 0
+row2
+Text GLabel 11950 4000 0    50   Input ~ 0
+row3
+Text GLabel 11950 4600 0    50   Input ~ 0
+row4
+Wire Wire Line
+	12450 2200 11950 2200
+Connection ~ 12450 2200
+Wire Wire Line
+	12450 2800 11950 2800
+Connection ~ 12450 2800
+Wire Wire Line
+	12450 3400 11950 3400
+Connection ~ 12450 3400
+Wire Wire Line
+	12450 4000 11950 4000
+Connection ~ 12450 4000
+Wire Wire Line
+	12450 4600 11950 4600
+Connection ~ 12450 4600
+Wire Wire Line
+	12850 1900 12850 1500
+Connection ~ 12850 1900
+Wire Wire Line
+	13400 1900 13400 1500
+Connection ~ 13400 1900
+Wire Wire Line
+	13950 1900 13950 1500
+Connection ~ 13950 1900
+Wire Wire Line
+	14500 1900 14500 1500
+Connection ~ 14500 1900
+Wire Wire Line
+	15050 1900 15050 1500
+Connection ~ 15050 1900
+Wire Wire Line
+	8950 6600 9250 6600
+Wire Wire Line
+	9850 6600 10100 6600
+Wire Wire Line
+	10700 6600 11000 6600
+Wire Wire Line
+	11600 6600 11900 6600
+Wire Wire Line
+	12550 6600 12800 6600
+Wire Wire Line
+	13400 6600 13700 6600
+Wire Wire Line
+	14300 6600 14600 6600
+Wire Wire Line
+	8950 8000 9250 8000
+Wire Wire Line
+	9850 8000 10100 8000
+Wire Wire Line
+	10700 8000 11000 8000
+Wire Wire Line
+	11600 8000 11900 8000
+Wire Wire Line
+	12500 8000 12550 8000
+Wire Wire Line
+	13400 8000 13700 8000
+Wire Wire Line
+	14300 8000 14600 8000
+Text GLabel 8350 6600 0    50   Input ~ 0
+LEDIN
+$Comp
+L LED:SK6812 D29
+U 1 1 5FF71755
+P 8650 6600
+F 0 "D29" H 8994 6646 50  0000 L CNN
+F 1 "SK6812" H 8994 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 8700 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 8750 6225 50  0001 L TNN
+	1    8650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D31
+U 1 1 5FF7911B
+P 10400 6600
+F 0 "D31" H 10744 6646 50  0000 L CNN
+F 1 "SK6812" H 10744 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 10450 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 10500 6225 50  0001 L TNN
+	1    10400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D32
+U 1 1 5FF7D977
+P 11300 6600
+F 0 "D32" H 11644 6646 50  0000 L CNN
+F 1 "SK6812" H 11644 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 11350 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 11400 6225 50  0001 L TNN
+	1    11300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D33
+U 1 1 5FF821E7
+P 12250 6600
+F 0 "D33" H 12594 6646 50  0000 L CNN
+F 1 "SK6812" H 12594 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 12300 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 12350 6225 50  0001 L TNN
+	1    12250 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D34
+U 1 1 5FF86A13
+P 13100 6600
+F 0 "D34" H 13444 6646 50  0000 L CNN
+F 1 "SK6812" H 13444 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 13150 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 13200 6225 50  0001 L TNN
+	1    13100 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 12250 6900
+Connection ~ 10400 6900
+Wire Wire Line
+	10400 6900 10800 6900
+Connection ~ 11300 6900
+Wire Wire Line
+	11300 6900 11700 6900
+Wire Wire Line
+	12250 6900 12650 6900
+Connection ~ 13100 6900
+$Comp
+L LED:SK6812 D35
+U 1 1 5FFA3247
+P 14000 6600
+F 0 "D35" H 14344 6646 50  0000 L CNN
+F 1 "SK6812" H 14344 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14050 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 14100 6225 50  0001 L TNN
+	1    14000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D36
+U 1 1 5FFA83BC
+P 14900 6600
+F 0 "D36" H 15244 6646 50  0000 L CNN
+F 1 "SK6812" H 15244 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14950 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 15000 6225 50  0001 L TNN
+	1    14900 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 14900 6900
+Wire Wire Line
+	13100 6900 13500 6900
+Connection ~ 14000 6900
+Wire Wire Line
+	14000 6900 14400 6900
+$Comp
+L LED:SK6812 D37
+U 1 1 5FFBFBB0
+P 8650 8000
+F 0 "D37" H 8994 8046 50  0000 L CNN
+F 1 "SK6812" H 8994 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 8700 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 8750 7625 50  0001 L TNN
+	1    8650 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D38
+U 1 1 5FFBFBB6
+P 9550 8000
+F 0 "D38" H 9894 8046 50  0000 L CNN
+F 1 "SK6812" H 9894 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 9600 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 9650 7625 50  0001 L TNN
+	1    9550 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D39
+U 1 1 5FFBFBBC
+P 10400 8000
+F 0 "D39" H 10744 8046 50  0000 L CNN
+F 1 "SK6812" H 10744 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 10450 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 10500 7625 50  0001 L TNN
+	1    10400 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D40
+U 1 1 5FFBFBC2
+P 11300 8000
+F 0 "D40" H 11644 8046 50  0000 L CNN
+F 1 "SK6812" H 11644 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 11350 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 11400 7625 50  0001 L TNN
+	1    11300 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D41
+U 1 1 5FFBFBC8
+P 12250 8000
+F 0 "D41" H 12594 8046 50  0000 L CNN
+F 1 "SK6812" H 12594 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 12300 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 12350 7625 50  0001 L TNN
+	1    12250 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D42
+U 1 1 5FFBFBCE
+P 13100 8000
+F 0 "D42" H 13444 8046 50  0000 L CNN
+F 1 "SK6812" H 13444 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 13150 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 13200 7625 50  0001 L TNN
+	1    13100 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D43
+U 1 1 5FFBFBD4
+P 14000 8000
+F 0 "D43" H 14344 8046 50  0000 L CNN
+F 1 "SK6812" H 14344 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14050 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 14100 7625 50  0001 L TNN
+	1    14000 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 8300 9050 8300
+Connection ~ 9550 8300
+Wire Wire Line
+	9550 8300 9950 8300
+Connection ~ 10400 8300
+Wire Wire Line
+	10400 8300 10800 8300
+Connection ~ 11300 8300
+Wire Wire Line
+	11300 8300 11700 8300
+Connection ~ 12250 8300
+Wire Wire Line
+	12250 8300 12650 8300
+Connection ~ 13100 8300
+Wire Wire Line
+	13100 8300 13500 8300
+Connection ~ 14000 8300
+Wire Wire Line
+	14000 8300 14400 8300
+Connection ~ 12550 8000
+Wire Wire Line
+	12550 8000 12800 8000
+Connection ~ 9550 6900
+Wire Wire Line
+	9550 6900 9950 6900
+Wire Wire Line
+	8650 6900 9050 6900
+$Comp
+L LED:SK6812 D30
+U 1 1 5FF74513
+P 9550 6600
+F 0 "D30" H 9894 6646 50  0000 L CNN
+F 1 "SK6812" H 9894 6555 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 9600 6300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 9650 6225 50  0001 L TNN
+	1    9550 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 14900 8300
+Wire Wire Line
+	14900 8300 15300 8300
+$Comp
+L LED:SK6812 D44
+U 1 1 5FFBFBDA
+P 14900 8000
+F 0 "D44" H 15244 8046 50  0000 L CNN
+F 1 "SK6812" H 15244 7955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14950 7700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 15000 7625 50  0001 L TNN
+	1    14900 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14900 6900 15300 6900
+$Comp
+L LED:SK6812 D51
+U 1 1 5FFC7525
+P 14000 9200
+F 0 "D51" H 14344 9246 50  0000 L CNN
+F 1 "SK6812" H 14344 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14050 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 14100 8825 50  0001 L TNN
+	1    14000 9200
+	1    0    0    -1  
+$EndComp
+Connection ~ 14000 9500
+Wire Wire Line
+	13100 9500 13500 9500
+Wire Wire Line
+	12550 9200 12800 9200
+Connection ~ 12550 9200
+Connection ~ 13100 9500
+Wire Wire Line
+	12250 9500 12650 9500
+Connection ~ 12250 9500
+Wire Wire Line
+	11300 9500 11700 9500
+Connection ~ 11300 9500
+Wire Wire Line
+	10400 9500 10800 9500
+Connection ~ 10400 9500
+Wire Wire Line
+	9550 9500 9950 9500
+Connection ~ 9550 9500
+Connection ~ 14900 9500
+Wire Wire Line
+	8650 9500 9050 9500
+$Comp
+L LED:SK6812 D52
+U 1 1 5FFC752B
+P 14900 9200
+F 0 "D52" H 15244 9246 50  0000 L CNN
+F 1 "SK6812" H 15244 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 14950 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 15000 8825 50  0001 L TNN
+	1    14900 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D50
+U 1 1 5FFC751F
+P 13100 9200
+F 0 "D50" H 13444 9246 50  0000 L CNN
+F 1 "SK6812" H 13444 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 13150 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 13200 8825 50  0001 L TNN
+	1    13100 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D49
+U 1 1 5FFC7519
+P 12250 9200
+F 0 "D49" H 12594 9246 50  0000 L CNN
+F 1 "SK6812" H 12594 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 12300 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 12350 8825 50  0001 L TNN
+	1    12250 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D48
+U 1 1 5FFC7513
+P 11300 9200
+F 0 "D48" H 11644 9246 50  0000 L CNN
+F 1 "SK6812" H 11644 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 11350 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 11400 8825 50  0001 L TNN
+	1    11300 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D47
+U 1 1 5FFC750D
+P 10400 9200
+F 0 "D47" H 10744 9246 50  0000 L CNN
+F 1 "SK6812" H 10744 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 10450 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 10500 8825 50  0001 L TNN
+	1    10400 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D46
+U 1 1 5FFC7507
+P 9550 9200
+F 0 "D46" H 9894 9246 50  0000 L CNN
+F 1 "SK6812" H 9894 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 9600 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 9650 8825 50  0001 L TNN
+	1    9550 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D45
+U 1 1 5FFC7501
+P 8650 9200
+F 0 "D45" H 8994 9246 50  0000 L CNN
+F 1 "SK6812" H 8994 9155 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 8700 8900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 8750 8825 50  0001 L TNN
+	1    8650 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15200 9200 15200 9650
+$Comp
+L power:GND #PWR0110
+U 1 1 5FF3FA62
+P 15200 9650
+F 0 "#PWR0110" H 15200 9400 50  0001 C CNN
+F 1 "GND" H 15205 9477 50  0000 C CNN
+F 2 "" H 15200 9650 50  0001 C CNN
+F 3 "" H 15200 9650 50  0001 C CNN
+	1    15200 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 9200 14600 9200
+Wire Wire Line
+	13400 9200 13700 9200
+Wire Wire Line
+	12500 9200 12550 9200
+Wire Wire Line
+	11600 9200 11900 9200
+Wire Wire Line
+	10700 9200 11000 9200
+Wire Wire Line
+	9850 9200 10100 9200
+Wire Wire Line
+	8950 9200 9250 9200
+$Comp
+L Device:C C28
+U 1 1 6016F206
+P 15350 8900
+F 0 "C28" H 15465 8946 50  0000 L CNN
+F 1 "0.1uF" H 15465 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15388 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 15350 8900 50  0001 C CNN
+	1    15350 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 601698B3
+P 14400 8900
+F 0 "C25" H 14515 8946 50  0000 L CNN
+F 1 "0.1uF" H 14515 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14438 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 14400 8900 50  0001 C CNN
+	1    14400 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 601640B0
+P 13500 8900
+F 0 "C22" H 13615 8946 50  0000 L CNN
+F 1 "0.1uF" H 13615 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13538 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 13500 8900 50  0001 C CNN
+	1    13500 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 6015E900
+P 12650 8900
+F 0 "C19" H 12765 8946 50  0000 L CNN
+F 1 "0.1uF" H 12765 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12688 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 12650 8900 50  0001 C CNN
+	1    12650 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 601591F2
+P 11700 8900
+F 0 "C16" H 11815 8946 50  0000 L CNN
+F 1 "0.1uF" H 11815 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11738 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 11700 8900 50  0001 C CNN
+	1    11700 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 60153A9B
+P 10800 8900
+F 0 "C13" H 10915 8946 50  0000 L CNN
+F 1 "0.1uF" H 10915 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10838 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 10800 8900 50  0001 C CNN
+	1    10800 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 6014E380
+P 9950 8900
+F 0 "C10" H 10065 8946 50  0000 L CNN
+F 1 "0.1uF" H 10065 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9988 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9950 8900 50  0001 C CNN
+	1    9950 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 60148B0B
+P 9050 8900
+F 0 "C7" H 9165 8946 50  0000 L CNN
+F 1 "0.1uF" H 9165 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9088 8750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9050 8900 50  0001 C CNN
+	1    9050 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 601432C3
+P 15300 7700
+F 0 "C27" H 15415 7746 50  0000 L CNN
+F 1 "0.1uF" H 15415 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15338 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 15300 7700 50  0001 C CNN
+	1    15300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 6013D9D8
+P 14400 7700
+F 0 "C24" H 14515 7746 50  0000 L CNN
+F 1 "0.1uF" H 14515 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14438 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 14400 7700 50  0001 C CNN
+	1    14400 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 60138316
+P 13500 7700
+F 0 "C21" H 13615 7746 50  0000 L CNN
+F 1 "0.1uF" H 13615 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13538 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 13500 7700 50  0001 C CNN
+	1    13500 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 60132B56
+P 12650 7700
+F 0 "C18" H 12765 7746 50  0000 L CNN
+F 1 "0.1uF" H 12765 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12688 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 12650 7700 50  0001 C CNN
+	1    12650 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 6012D21E
+P 11700 7700
+F 0 "C15" H 11815 7746 50  0000 L CNN
+F 1 "0.1uF" H 11815 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11738 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 11700 7700 50  0001 C CNN
+	1    11700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 60121CC9
+P 10800 7700
+F 0 "C12" H 10915 7746 50  0000 L CNN
+F 1 "0.1uF" H 10915 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10838 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 10800 7700 50  0001 C CNN
+	1    10800 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 6011C4A7
+P 9950 7700
+F 0 "C9" H 10065 7746 50  0000 L CNN
+F 1 "0.1uF" H 10065 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9988 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9950 7700 50  0001 C CNN
+	1    9950 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60116CD0
+P 9050 7700
+F 0 "C6" H 9165 7746 50  0000 L CNN
+F 1 "0.1uF" H 9165 7655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9088 7550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9050 7700 50  0001 C CNN
+	1    9050 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 6010F6B8
+P 15300 6300
+F 0 "C26" H 15415 6346 50  0000 L CNN
+F 1 "0.1uF" H 15415 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15338 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 15300 6300 50  0001 C CNN
+	1    15300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 6010A0B9
+P 14400 6300
+F 0 "C23" H 14515 6346 50  0000 L CNN
+F 1 "0.1uF" H 14515 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14438 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 14400 6300 50  0001 C CNN
+	1    14400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 60104935
+P 13500 6300
+F 0 "C20" H 13615 6346 50  0000 L CNN
+F 1 "0.1uF" H 13615 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13538 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 13500 6300 50  0001 C CNN
+	1    13500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 600FF352
+P 12650 6300
+F 0 "C17" H 12765 6346 50  0000 L CNN
+F 1 "0.1uF" H 12765 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12688 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 12650 6300 50  0001 C CNN
+	1    12650 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 600F9DD9
+P 11700 6300
+F 0 "C14" H 11815 6346 50  0000 L CNN
+F 1 "0.1uF" H 11815 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11738 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 11700 6300 50  0001 C CNN
+	1    11700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 600F2BF6
+P 10800 6300
+F 0 "C11" H 10915 6346 50  0000 L CNN
+F 1 "0.1uF" H 10915 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10838 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 10800 6300 50  0001 C CNN
+	1    10800 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 600ED51F
+P 9950 6300
+F 0 "C8" H 10065 6346 50  0000 L CNN
+F 1 "0.1uF" H 10065 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9988 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9950 6300 50  0001 C CNN
+	1    9950 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 600CA5A7
+P 9050 6300
+F 0 "C5" H 9165 6346 50  0000 L CNN
+F 1 "0.1uF" H 9165 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9088 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 9050 6300 50  0001 C CNN
+	1    9050 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 6150 14900 6150
+Wire Wire Line
+	8650 6150 8650 6300
+Connection ~ 9050 6150
+Wire Wire Line
+	9050 6150 8650 6150
+Connection ~ 9950 6150
+Wire Wire Line
+	9950 6150 9550 6150
+Connection ~ 10800 6150
+Wire Wire Line
+	10800 6150 10400 6150
+Connection ~ 11700 6150
+Wire Wire Line
+	11700 6150 11300 6150
+Connection ~ 12650 6150
+Wire Wire Line
+	12650 6150 12250 6150
+Connection ~ 13500 6150
+Wire Wire Line
+	13500 6150 13100 6150
+Connection ~ 14400 6150
+Wire Wire Line
+	14400 6150 14000 6150
+Wire Wire Line
+	8650 7700 8650 7550
+Wire Wire Line
+	8650 7550 9050 7550
+Connection ~ 9050 7550
+Wire Wire Line
+	9050 7550 9550 7550
+Connection ~ 9950 7550
+Wire Wire Line
+	9950 7550 10400 7550
+Connection ~ 10800 7550
+Wire Wire Line
+	10800 7550 11300 7550
+Connection ~ 11700 7550
+Wire Wire Line
+	11700 7550 12250 7550
+Connection ~ 12650 7550
+Wire Wire Line
+	12650 7550 13100 7550
+Connection ~ 13500 7550
+Wire Wire Line
+	13500 7550 14000 7550
+Connection ~ 14400 7550
+Wire Wire Line
+	14400 7550 14900 7550
+Wire Wire Line
+	14900 7700 14900 7550
+Connection ~ 14900 7550
+Wire Wire Line
+	14900 7550 15300 7550
+Wire Wire Line
+	14000 7700 14000 7550
+Connection ~ 14000 7550
+Wire Wire Line
+	14000 7550 14400 7550
+Wire Wire Line
+	13100 7700 13100 7550
+Connection ~ 13100 7550
+Wire Wire Line
+	13100 7550 13500 7550
+Wire Wire Line
+	12250 7550 12250 7700
+Connection ~ 12250 7550
+Wire Wire Line
+	12250 7550 12650 7550
+Wire Wire Line
+	11300 7550 11300 7700
+Connection ~ 11300 7550
+Wire Wire Line
+	11300 7550 11700 7550
+Wire Wire Line
+	10400 7550 10400 7700
+Connection ~ 10400 7550
+Wire Wire Line
+	10400 7550 10800 7550
+Wire Wire Line
+	9550 7550 9550 7700
+Connection ~ 9550 7550
+Wire Wire Line
+	9550 7550 9950 7550
+Wire Wire Line
+	9550 6300 9550 6150
+Connection ~ 9550 6150
+Wire Wire Line
+	9550 6150 9050 6150
+Wire Wire Line
+	10400 6300 10400 6150
+Connection ~ 10400 6150
+Wire Wire Line
+	10400 6150 9950 6150
+Wire Wire Line
+	11300 6300 11300 6150
+Connection ~ 11300 6150
+Wire Wire Line
+	11300 6150 10800 6150
+Wire Wire Line
+	12250 6300 12250 6150
+Connection ~ 12250 6150
+Wire Wire Line
+	12250 6150 11700 6150
+Wire Wire Line
+	13100 6300 13100 6150
+Connection ~ 13100 6150
+Wire Wire Line
+	13100 6150 12650 6150
+Wire Wire Line
+	14000 6300 14000 6150
+Connection ~ 14000 6150
+Wire Wire Line
+	14000 6150 13500 6150
+Wire Wire Line
+	14900 6300 14900 6150
+Connection ~ 14900 6150
+Wire Wire Line
+	14900 6150 14400 6150
+Wire Wire Line
+	15600 6900 15600 8300
+Connection ~ 15600 8300
+Wire Wire Line
+	15600 8300 15600 9500
+$Comp
+L power:GND #PWR0121
+U 1 1 6030E4A5
+P 15600 9650
+F 0 "#PWR0121" H 15600 9400 50  0001 C CNN
+F 1 "GND" H 15605 9477 50  0000 C CNN
+F 2 "" H 15600 9650 50  0001 C CNN
+F 3 "" H 15600 9650 50  0001 C CNN
+	1    15600 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 9500 15600 9650
+Connection ~ 15600 9500
+Wire Wire Line
+	8650 8900 8650 8750
+Wire Wire Line
+	8650 8750 9050 8750
+Connection ~ 9050 8750
+Wire Wire Line
+	9050 8750 9950 8750
+Connection ~ 9950 8750
+Wire Wire Line
+	9950 8750 10800 8750
+Connection ~ 10800 8750
+Wire Wire Line
+	10800 8750 11700 8750
+Connection ~ 11700 8750
+Wire Wire Line
+	11700 8750 12650 8750
+Connection ~ 12650 8750
+Wire Wire Line
+	12650 8750 13500 8750
+Connection ~ 13500 8750
+Wire Wire Line
+	13500 8750 14400 8750
+Connection ~ 14400 8750
+Wire Wire Line
+	14400 8750 15350 8750
+Wire Wire Line
+	15300 7550 15650 7550
+Wire Wire Line
+	15650 7550 15650 6150
+Wire Wire Line
+	15650 6150 15300 6150
+Connection ~ 15300 7550
+Connection ~ 15300 6150
+Wire Wire Line
+	15350 8750 15650 8750
+Wire Wire Line
+	15650 8750 15650 7550
+Connection ~ 15350 8750
+Connection ~ 15650 7550
+Wire Wire Line
+	9050 6450 9050 6900
+Connection ~ 9050 6900
+Wire Wire Line
+	9050 6900 9550 6900
+Wire Wire Line
+	9950 6450 9950 6900
+Connection ~ 9950 6900
+Wire Wire Line
+	9950 6900 10400 6900
+Wire Wire Line
+	10800 6450 10800 6900
+Connection ~ 10800 6900
+Wire Wire Line
+	10800 6900 11300 6900
+Wire Wire Line
+	11700 6450 11700 6900
+Connection ~ 11700 6900
+Wire Wire Line
+	11700 6900 12250 6900
+Wire Wire Line
+	12650 6450 12650 6900
+Connection ~ 12650 6900
+Wire Wire Line
+	12650 6900 13100 6900
+Wire Wire Line
+	13500 6450 13500 6900
+Connection ~ 13500 6900
+Wire Wire Line
+	13500 6900 14000 6900
+Wire Wire Line
+	14400 6450 14400 6900
+Connection ~ 14400 6900
+Wire Wire Line
+	14400 6900 14900 6900
+Wire Wire Line
+	15300 6450 15300 6900
+Connection ~ 15300 6900
+Wire Wire Line
+	15300 6900 15600 6900
+Wire Wire Line
+	15300 7850 15300 8300
+Connection ~ 15300 8300
+Wire Wire Line
+	15300 8300 15600 8300
+Wire Wire Line
+	14400 7850 14400 8300
+Connection ~ 14400 8300
+Wire Wire Line
+	14400 8300 14900 8300
+Wire Wire Line
+	13500 7850 13500 8300
+Connection ~ 13500 8300
+Wire Wire Line
+	13500 8300 14000 8300
+Wire Wire Line
+	12650 7850 12650 8300
+Connection ~ 12650 8300
+Wire Wire Line
+	12650 8300 13100 8300
+Wire Wire Line
+	11700 7850 11700 8300
+Connection ~ 11700 8300
+Wire Wire Line
+	11700 8300 12250 8300
+Wire Wire Line
+	10800 7850 10800 8300
+Connection ~ 10800 8300
+Wire Wire Line
+	10800 8300 11300 8300
+Wire Wire Line
+	9950 7850 9950 8300
+Connection ~ 9950 8300
+Wire Wire Line
+	9950 8300 10400 8300
+Wire Wire Line
+	9050 7850 9050 8300
+Connection ~ 9050 8300
+Wire Wire Line
+	9050 8300 9550 8300
+Wire Wire Line
+	9050 9050 9050 9500
+Connection ~ 9050 9500
+Wire Wire Line
+	9050 9500 9550 9500
+Wire Wire Line
+	9950 9050 9950 9500
+Connection ~ 9950 9500
+Wire Wire Line
+	9950 9500 10400 9500
+Wire Wire Line
+	10800 9050 10800 9500
+Connection ~ 10800 9500
+Wire Wire Line
+	10800 9500 11300 9500
+Wire Wire Line
+	11700 9050 11700 9500
+Connection ~ 11700 9500
+Wire Wire Line
+	11700 9500 12250 9500
+Wire Wire Line
+	12650 9050 12650 9500
+Connection ~ 12650 9500
+Wire Wire Line
+	12650 9500 13100 9500
+Wire Wire Line
+	13500 9050 13500 9500
+Connection ~ 13500 9500
+Wire Wire Line
+	13500 9500 14000 9500
+Wire Wire Line
+	14400 9050 14400 9500
+Wire Wire Line
+	14000 9500 14400 9500
+Connection ~ 14400 9500
+Wire Wire Line
+	14400 9500 14900 9500
+Wire Wire Line
+	15350 9050 15350 9500
+Wire Wire Line
+	14900 9500 15350 9500
+Connection ~ 15350 9500
+Wire Wire Line
+	15350 9500 15600 9500
+Wire Wire Line
+	8350 9200 8350 8650
+Wire Wire Line
+	8350 8650 15700 8650
+Wire Wire Line
+	15700 8650 15700 8000
+Wire Wire Line
+	15700 8000 15200 8000
+Wire Wire Line
+	8350 8000 8350 7450
+Wire Wire Line
+	8350 7450 15700 7450
+Wire Wire Line
+	15700 7450 15700 6600
+Wire Wire Line
+	15700 6600 15200 6600
 $EndSCHEMATC
