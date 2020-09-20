@@ -1258,6 +1258,8 @@ Wire Wire Line
 Wire Wire Line
 	10700 8000 11000 8000
 Wire Wire Line
+	12500 8000 12550 8000
+Wire Wire Line
 	13400 8000 13700 8000
 Wire Wire Line
 	14300 8000 14600 8000
@@ -1453,6 +1455,9 @@ Wire Wire Line
 Connection ~ 14000 8300
 Wire Wire Line
 	14000 8300 14400 8300
+Connection ~ 12550 8000
+Wire Wire Line
+	12550 8000 12800 8000
 Connection ~ 9550 6900
 Wire Wire Line
 	9550 6900 9950 6900
@@ -2098,10 +2103,10 @@ Wire Wire Line
 Wire Wire Line
 	11600 8000 11950 8000
 $Comp
-L power:+5V #PWR0123
+L power:+5V #PWR?
 U 1 1 5F7CA078
 P 8650 6150
-F 0 "#PWR0123" H 8650 6000 50  0001 C CNN
+F 0 "#PWR?" H 8650 6000 50  0001 C CNN
 F 1 "+5V" H 8665 6323 50  0000 C CNN
 F 2 "" H 8650 6150 50  0001 C CNN
 F 3 "" H 8650 6150 50  0001 C CNN
@@ -2109,6 +2114,4 @@ F 3 "" H 8650 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8650 6150
-Wire Wire Line
-	12550 8000 12800 8000
 $EndSCHEMATC
