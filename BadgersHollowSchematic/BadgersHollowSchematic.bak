@@ -62,7 +62,7 @@ P 1600 2200
 F 0 "C1" H 1778 2246 39  0000 L CNN
 F 1 "22pF" H 1778 2163 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1600 2200 50  0001 C CNN
-F 3 "https://www.iqdfrequencyproducts.com/products/pn/LFXTAL027945Bulk.pdf" H 1600 2200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf" H 1600 2200 50  0001 C CNN
 	1    1600 2200
 	1    0    0    -1  
 $EndComp
@@ -73,7 +73,7 @@ P 1200 2200
 F 0 "C2" H 1378 2246 39  0000 L CNN
 F 1 "22pF" H 1378 2163 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1200 2200 50  0001 C CNN
-F 3 "https://www.iqdfrequencyproducts.com/products/pn/LFXTAL027945Bulk.pdf" H 1200 2200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf" H 1200 2200 50  0001 C CNN
 	1    1200 2200
 	1    0    0    -1  
 $EndComp
@@ -114,7 +114,7 @@ P 1400 5550
 F 0 "R1" H 1470 5596 50  0000 L CNN
 F 1 "10K" H 1470 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1330 5550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/rcse3-1761771.pdf" H 1400 5550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxa-as-1858644.pdf" H 1400 5550 50  0001 C CNN
 	1    1400 5550
 	1    0    0    -1  
 $EndComp
@@ -1258,8 +1258,6 @@ Wire Wire Line
 Wire Wire Line
 	10700 8000 11000 8000
 Wire Wire Line
-	12500 8000 12550 8000
-Wire Wire Line
 	13400 8000 13700 8000
 Wire Wire Line
 	14300 8000 14600 8000
@@ -1455,9 +1453,6 @@ Wire Wire Line
 Connection ~ 14000 8300
 Wire Wire Line
 	14000 8300 14400 8300
-Connection ~ 12550 8000
-Wire Wire Line
-	12550 8000 12800 8000
 Connection ~ 9550 6900
 Wire Wire Line
 	9550 6900 9950 6900
@@ -2053,7 +2048,7 @@ NoConn ~ 3500 2500
 NoConn ~ 3500 2400
 NoConn ~ 3500 2200
 NoConn ~ 3500 1500
-NoConn ~ 9350 2050
+NoConn ~ 9400 1950
 NoConn ~ 3500 3100
 NoConn ~ 12150 3250
 Connection ~ 14500 3700
@@ -2103,10 +2098,10 @@ Wire Wire Line
 Wire Wire Line
 	11600 8000 11950 8000
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0123
 U 1 1 5F7CA078
 P 8650 6150
-F 0 "#PWR?" H 8650 6000 50  0001 C CNN
+F 0 "#PWR0123" H 8650 6000 50  0001 C CNN
 F 1 "+5V" H 8665 6323 50  0000 C CNN
 F 2 "" H 8650 6150 50  0001 C CNN
 F 3 "" H 8650 6150 50  0001 C CNN
@@ -2114,4 +2109,6 @@ F 3 "" H 8650 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8650 6150
+Wire Wire Line
+	12550 8000 12800 8000
 $EndSCHEMATC
