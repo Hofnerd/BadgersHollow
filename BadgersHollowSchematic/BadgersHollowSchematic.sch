@@ -2048,7 +2048,6 @@ NoConn ~ 3500 2500
 NoConn ~ 3500 2400
 NoConn ~ 3500 2200
 NoConn ~ 3500 1500
-NoConn ~ 9400 1950
 NoConn ~ 3500 3100
 NoConn ~ 10950 3300
 Connection ~ 13300 3750
